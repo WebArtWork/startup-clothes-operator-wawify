@@ -1,0 +1,32 @@
+<section class="pages-header">
+	<div class="pages-header__container">
+		<div class="pages-header__text">
+			<h1>{{{translate("Template.Wawify Themes")}}}</h1>
+			<p>
+				{{{translate("Template.Choose a theme that perfectly suits your online store and create
+				your website in just a few clicks")}}}
+			</p>
+			<a href="/manage/profile">Sign</a>
+		</div>
+		<div class="pages-header__img">
+			<img src="/template/img/themes-header.jpg" alt="Try Wawify" />
+		</div>
+	</div>
+</section>
+
+<section class="themes-wrapper">
+	<div class="themes-wrapper__container">
+		{% for theme in themes %}
+		<div class="themes-wrapper__card themes-card">
+			<a href="https://{{{theme.name}}}.wawify.com" class="themes-card__img">
+				<img src="{{{theme.thumb}}}" alt="{{{theme.name}}}" />
+			</a>
+			<div class="themes-card__text">
+				<span class="themes-card__title">{{{theme.name}}}</span>
+				<a href="https://{{{theme.name}}}.wawify.com" class="themes-card__link">{{{translate("Template.View demo")}}}</a>
+			</div>
+		</div>
+
+		{% endfor %}
+	</div>
+</section>

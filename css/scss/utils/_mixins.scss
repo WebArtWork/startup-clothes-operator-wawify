@@ -1,0 +1,145 @@
+@mixin button-white {
+	text-align: center;
+	font-weight: 600;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	font-size: 20px;
+
+	cursor: pointer;
+
+	background: linear-gradient(45deg, var(--tertiary-color), transparent)
+			no-repeat top left -450px / 100% 100%,
+		linear-gradient(281deg, var(--tertiary-color), transparent) no-repeat
+			top right -450px / 100% 100%;
+
+	color: var(--primary-color);
+
+	border-radius: 20px;
+
+	transition: all 0.5s ease-in-out;
+
+	border: 3px solid var(--tertiary-color);
+
+	&:active {
+		opacity: 0.7;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-position: top left 0, top right 0;
+			color: var(--secondary-color);
+		}
+	}
+}
+
+@mixin button-black {
+	text-align: center;
+	font-weight: 600;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	font-size: 20px;
+
+	border-radius: 20px;
+
+	cursor: pointer;
+
+	// background: linear-gradient(45deg, var(--secondary-color), transparent)
+	// 		no-repeat top left -450px / 100% 100%,
+	// 	linear-gradient(281deg, var(--secondary-color), transparent) no-repeat
+	// 		top right -450px / 100% 100%;
+
+	// color: var(--secondary-color);
+
+	// border: 3px solid var(--tertiary-color);
+
+	// transition: all 0.5s ease-in-out;
+
+	// &:active {
+	// 	opacity: 0.7;
+	// }
+
+	// @media (any-hover: hover) {
+	// 	&:hover {
+	// 		background-position: top left 0, top right 0;
+	// 		color: var(--primary-color);
+	// 	}
+	// }
+
+	background: linear-gradient(45deg, var(--tertiary-color), transparent)
+			no-repeat top left -450px / 100% 100%,
+		linear-gradient(281deg, var(--tertiary-color), transparent) no-repeat
+			top right -450px / 100% 100%;
+
+	color: var(--secondary-color);
+
+	border-radius: 20px;
+
+	transition: all 0.5s ease-in-out;
+
+	border: 3px solid var(--tertiary-color);
+
+	&:active {
+		opacity: 0.7;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-position: top left 0, top right 0;
+			color: var(--primary-color);
+		}
+	}
+}
+
+@mixin button-dark {
+	text-align: center;
+	font-weight: 600;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	font-size: 20px;
+
+	border-radius: 20px;
+
+	cursor: pointer;
+
+	background: linear-gradient(45deg, var(--secondary-color), transparent)
+			no-repeat top left -450px / 100% 100%,
+		linear-gradient(281deg, var(--secondary-color), transparent) no-repeat
+			top right -450px / 100% 100%;
+
+	color: var(--secondary-color);
+
+	border: 3px solid var(--secondary-color);
+
+	transition: all 0.5s ease-in-out;
+
+	&:active {
+		opacity: 0.7;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-position: top left 0, top right 0;
+			color: var(--primary-color);
+		}
+	}
+}
+
+@mixin page-padding {
+	padding-top: clamp(7.5rem, 7.045rem + 2.27vw, 8.75rem);
+	padding-bottom: clamp(3.75rem, 3.295rem + 2.27vw, 5rem);
+}

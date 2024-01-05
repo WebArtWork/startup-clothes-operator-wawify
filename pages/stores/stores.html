@@ -1,0 +1,35 @@
+<section class="pages-header">
+	<div class="pages-header__container">
+		<div class="pages-header__text">
+			<h1>{{{translate("Template.Upgrade your business with Wawify")}}}</h1>
+			<p>
+                {{{translate("Template.Create a new store or improve an existing one")}}}
+			</p>
+			<a href="/manage/profile">{{{translate("Template.Sign")}}}</a>
+		</div>
+		<div class="pages-header__img">
+			<img src="/template/img/stores-header.png" alt="Try Wawify" />
+		</div>
+	</div>
+</section>
+
+<section class="stores-page">
+    <div class="stores-page__container">
+        <div class="stores-page__wrapper">
+            {% for store in stores %}
+
+            <a href="/store/{{{store.url || store.id}}}" class="stores-page__card stores-page-card">
+                <div class="stores-page-card__img">
+                    <img src="{{{store.thumb}}}" alt="{{{store.name}}}" />
+                </div>
+                <span class="stores-page-card__title">{{{store.name}}}</span>
+            </a>
+
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="line">
+    <a href="/manage/profile" class="infinite-line"></a>
+</section>

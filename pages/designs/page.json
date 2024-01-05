@@ -1,0 +1,44 @@
+{
+    "title": "Page Title",
+    "designs": [{
+        "name": "Name",
+        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "author": "L"
+    },
+    {
+        "name": "Name",
+        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "author": "L"
+    },
+    {
+        "name": "Name",
+        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "author": "L"
+    },
+    {
+        "name": "Name",
+        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "author": "L"
+    },
+    {
+        "name": "Name",
+        "thumb": "https://neryxomka.com/template/img/welcome.png",
+        "author": "L"
+    }
+],
+
+"groups": [
+    {
+        "categories": [
+            {
+                "name": "Category Name",
+                "tags": [
+                    {
+                        "name": "Tag Name"
+                    }
+                ]
+            }
+        ]
+    }
+]
+}
